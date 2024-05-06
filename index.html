@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="1style.css">
+</head>
+<body>
+    <div class="body">
+    <div class="responsive-bar">
+        <div class="logo">
+            <img src="http://www.mhf.org.au/media/zoo/images/yourlogohere_2cb8c31ab01096e7842d781ac311a776.png" alt="logo"/>
+            </div>
+            <div class="menu">
+            <h4>Menu</h4>
+            </div>
+        </div>
+		<nav>
+            <div class="logo">
+          <h1><i class="fa-solid fa-signature"></i>HARRY </i></h1>
+            </div>
+         <ul>
+            <li><a href="#">Home</a></li>
+             <li><a href="#">About us</a></li>
+             <li><a href="#">Portfolio</a></li>
+             <li><a href="#">Services</a></li>
+             <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <!-- <section class="sec1"></section>
+        <section class="content"> -->
+
+            
+
+             <!-- movie slider part 2  -->
+
+            <div class="accordion">
+                <ul>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">AGHORI (2024) - HINDI Trailer</a>
+                        </div>
+                        <a href="https://youtu.be/c-Kj6mC1eEc?si=WvymdUiDXkXezuK0"><img src="shaitaan-et00384234-ygnzhcghab-landscape-840x420.jpg" alt="transformers4_640x320" border="0"></a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">AGHORI (2024) - HINDI Trailer</a>
+                        </div>
+                        <a href="https://youtu.be/Js3KKS4gx-8?si=z68a4u3eccJhffr5"><img src="./x1080.jpeg" alt="Blade_Runner2049_640x320" border="0"></a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Shaitan Teaser Release Update</a>
+                        </div>
+                        <a href="Fighter Official Trailer"><img src="sddefault.jpg" alt="GOG2_640x320" border="0"></a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Spiderman: Homecoming</a>
+                        </div>
+                        <a href="https://ibb.co/mC5Uen"><img src="https://image.ibb.co/da7xX7/spiderman_homecoming_640x320.jpg" alt="spiderman_homecoming_640x320" border="0"></a>
+                    </li>
+                    <li>
+                        <div class="image_title">
+                            <a href="#">Wonder Woman</a>
+                        </div>
+                        <a href="https://ibb.co/enV1s7"><img src="https://image.ibb.co/dHdAkS/Wonder_Woman_640x320.jpg" alt="Wonder_Woman_640x320" border="0"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+           
+<script>
+    function createMovingShape() {
+    const shapes = document.querySelectorAll(".moving-shape");  
+    if(shapes.length >9) {
+        return;
+      }
+    var shape = document.createElement('div');
+    shape.classList.add('moving-shape');
+    var width = Math.floor(Math.random() * (300 - 50 + 1)) + 50;
+    shape.style.width = width + 'px';
+    var right = Math.floor(Math.random() * (window.innerWidth * 0.9 - (-50) + 1)) + (-50);
+    shape.style.right = right + 'px';
+    var duration = Math.floor(Math.random() * (8 - 2 + 1)) + 2;
+    shape.style.animationDuration = duration + 's';
+    var randomColor = 'rgb(' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ',' + Math.floor(Math.random() * 256) + ')';
+    shape.style.backgroundColor = randomColor;
+    document.body.appendChild(shape);
+    shape.addEventListener('animationend', function() {
+        let shapes = document.querySelectorAll(".moving-shape"); 
+        console.log(shapes.length);
+        shape.remove();
+        shapes = document.querySelectorAll(".moving-shape"); 
+        console.log(" -1 = " + shapes.length);
+    });
+}
+
+createMovingShape();
+setInterval(createMovingShape, 4000);
+
+</script>
+ </html>   
